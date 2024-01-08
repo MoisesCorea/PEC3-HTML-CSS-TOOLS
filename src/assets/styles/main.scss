@@ -6,6 +6,8 @@
 /**
  * Import variables
  */
+@tailwind base;
+@tailwind components;
 
 @import "variables";
 
@@ -17,6 +19,7 @@
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
 
 /**
  * Import layouts
@@ -28,3 +31,5 @@
 /**
  * Do NOT include anything else in this file!
  */
+
+@tailwind utilities;

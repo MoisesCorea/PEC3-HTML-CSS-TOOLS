@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./assets/styles/main.scss"
+        />
+        <title>Miembros</title>
+    </head>
+    <body>
+        <include src="./views/header.html"></include>
+        <main class="my-10 mx-4 md:w-[90%] md:mx-auto">
+            <h1 class="my-10 font-bold text-4xl text-center">
+                Miembros destacados de la liga de tenis
+            </h1>
+            <div
+                class="flex flex-col justify-center md:flex-row flex-wrap gap-6 sm:mx-auto"
+            >
+                <include src="./views/card.html">
+                    { "img1": "img1.jpeg", "name": "Irwing Miranda", "info":
+                    "Irwing Moiranda es un tenista destacado con una
+                    impresionante trayectoria en el mundo del tenis. Ha
+                    participado en numerosos torneos y ha demostrado su
+                    habilidad en la cancha." }
+                </include>
+                <include src="./views/card.html">
+                    { "img1": "img2.jpeg", "name": "Guillermo Matute", "info": "
+                    Guillermo Matute es un tenista experimentado con una larga
+                    historia de éxitos en la liga. Su dedicación y experiencia
+                    lo han convertido en un referente para otros jugadores." }
+                </include>
+                <include src="./views/card.html">
+                    { "img1": "img3.jpeg", "name": "Carlos Perdomo", "info":
+                    "Carlos Perdomo es conocido por su juego estratégico y su
+                    enfoque implacable en la cancha de tenis. Su participación
+                    en la liga ha sido inspiradora para muchos jóvenes
+                    tenistas." }
+                </include>
+                <include src="./views/card.html">
+                    { "img1": "img4.jpeg", "name": "Manuel Zelaya", "info":
+                    "Manuel Zelaya es un apasionado del tenis que ha dejado
+                    huella en cada competición en la que participa. Su
+                    dedicación y habilidades lo han convertido en una figura
+                    destacada en la liga." }
+                </include>
+                <include src="./views/card.html">
+                    { "img1": "img5.jpeg", "name": "Bryan Ochoa", "info": "Bryan
+                    Ochoa es un talentoso jugador de tenis que ha ganado
+                    reconocimiento por sus habilidades excepcionales. Su pasión
+                    por el deporte lo ha llevado a destacarse en cada
+                    competencia." }
+                </include>
+                <include src="./views/card.html">
+                    { "img1": "img6.jpeg", "name": "Josue Lorenzo", "info":
+                    "Josuel Lorenzo es un tenista talentoso con una presencia
+                    dominante en la cancha. Su estilo de juego único y su
+                    determinación lo han convertido en un miembro destacado de
+                    la liga de tenis." }
+                </include>
+            </div>
+            <include src="./views/back_top_button.html"></include>
+        </main>
+        <include src="./views/footer.html"></include>
+        <script type="module" src="./assets/scripts/main.js"></script>
+    </body>
+</html>
